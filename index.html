@@ -410,6 +410,13 @@
 
     .btn-pedir:hover { background: var(--rose); color: white; }
 
+    .product-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
     /* NOSOTROS */
     #nosotros {
       background: var(--cream);
@@ -592,13 +599,19 @@
 
   <!-- NAV -->
   <nav>
-    <a href="#inicio" class="nav-logo">✦ Florivé</a>
+    <a href="#inicio" class="nav-logo" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
+      <div style="display:flex;flex-direction:column;align-items:center;line-height:1;">
+        <div style="font-size:0.55rem;letter-spacing:0.25em;color:#9A7B4F;text-transform:uppercase;font-family:'Jost',sans-serif;font-weight:400;">✦ &nbsp; ✦ &nbsp; ✦</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:400;letter-spacing:0.18em;color:#9A7B4F;text-transform:uppercase;">Florivé</div>
+        <div style="width:100%;height:0.5px;background:#9A7B4F;margin-top:2px;"></div>
+      </div>
+    </a>
     <ul class="nav-links">
       <li><a href="#catalogo">Catálogo</a></li>
       <li><a href="#nosotros">Nosotros</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
-    <a href="https://wa.me/51999999999?text=Hola,%20vi%20su%20catálogo%20y%20quiero%20hacer%20un%20pedido" target="_blank" class="nav-cta">Pedir ahora</a>
+    <a href="https://wa.me/51919560600?text=Hola,%20vi%20su%20catálogo%20y%20quiero%20hacer%20un%20pedido" target="_blank" class="nav-cta">Pedir ahora</a>
   </nav>
 
   <!-- HERO -->
@@ -658,79 +671,97 @@
     <div class="catalog-grid" id="catalogGrid">
 
       <div class="product-card fade-up" data-cat="rosas">
-        <div class="product-img">🌹</div>
+        <div class="product-img" id="img-p1">
+          <!-- REEMPLAZA EL EMOJI POR: <img src="TU_IMAGEN.jpg" alt="Docena de rosas rojas"> -->
+          🌹
+        </div>
         <div class="product-body">
           <div class="product-cat">Rosas</div>
           <div class="product-name">Docena de rosas rojas</div>
           <div class="product-desc">12 rosas rojas frescas envueltas en papel kraft con lazo de satén. El clásico que nunca falla.</div>
           <div class="product-footer">
             <span class="product-price">S/ 65</span>
-            <a href="https://wa.me/51999999999?text=Hola,%20quiero%20pedir%20una%20Docena%20de%20rosas%20rojas" target="_blank" class="btn-pedir">Pedir</a>
+            <a href="https://wa.me/51919560600?text=Hola,%20quiero%20pedir%20una%20Docena%20de%20rosas%20rojas" target="_blank" class="btn-pedir">Pedir</a>
           </div>
         </div>
       </div>
 
       <div class="product-card fade-up" data-cat="rosas">
-        <div class="product-img">💐</div>
+        <div class="product-img" id="img-p2">
+          <!-- REEMPLAZA EL EMOJI POR: <img src="TU_IMAGEN.jpg" alt="Ramo premium 24 rosas"> -->
+          💐
+        </div>
         <div class="product-body">
           <div class="product-cat">Rosas</div>
           <div class="product-name">Ramo premium 24 rosas</div>
           <div class="product-desc">24 rosas mixtas en rojo y blanco, presentación de lujo con cinta dorada. Para momentos grandes.</div>
           <div class="product-footer">
             <span class="product-price">S/ 120</span>
-            <a href="https://wa.me/51999999999?text=Hola,%20quiero%20pedir%20el%20Ramo%20premium%2024%20rosas" target="_blank" class="btn-pedir">Pedir</a>
+            <a href="https://wa.me/51919560600?text=Hola,%20quiero%20pedir%20el%20Ramo%20premium%2024%20rosas" target="_blank" class="btn-pedir">Pedir</a>
           </div>
         </div>
       </div>
 
       <div class="product-card fade-up" data-cat="rosas">
-        <div class="product-img">🌸</div>
+        <div class="product-img" id="img-p3">
+          <!-- REEMPLAZA EL EMOJI POR: <img src="TU_IMAGEN.jpg" alt="Mini bouquet 6 rosas"> -->
+          🌸
+        </div>
         <div class="product-body">
           <div class="product-cat">Rosas</div>
           <div class="product-name">Mini bouquet 6 rosas</div>
           <div class="product-desc">6 rosas rosadas, ideal para detalles del día a día. Compacto, delicado y muy especial.</div>
           <div class="product-footer">
             <span class="product-price">S/ 38</span>
-            <a href="https://wa.me/51999999999?text=Hola,%20quiero%20pedir%20el%20Mini%20bouquet%206%20rosas" target="_blank" class="btn-pedir">Pedir</a>
+            <a href="https://wa.me/51919560600?text=Hola,%20quiero%20pedir%20el%20Mini%20bouquet%206%20rosas" target="_blank" class="btn-pedir">Pedir</a>
           </div>
         </div>
       </div>
 
       <div class="product-card fade-up" data-cat="caja">
-        <div class="product-img" style="background:#FFF0F5;">🎁</div>
+        <div class="product-img" style="background:#FFF0F5;" id="img-p4">
+          <!-- REEMPLAZA EL EMOJI POR: <img src="TU_IMAGEN.jpg" alt="Caja corazón de rosas"> -->
+          🎁
+        </div>
         <div class="product-body">
           <div class="product-cat">Arreglo en caja</div>
           <div class="product-name">Caja corazón de rosas</div>
           <div class="product-desc">Caja en forma de corazón con 20 rosas rojas acomodadas artesanalmente. Impacto garantizado.</div>
           <div class="product-footer">
             <span class="product-price">S/ 150</span>
-            <a href="https://wa.me/51999999999?text=Hola,%20quiero%20pedir%20la%20Caja%20corazón%20de%20rosas" target="_blank" class="btn-pedir">Pedir</a>
+            <a href="https://wa.me/51919560600?text=Hola,%20quiero%20pedir%20la%20Caja%20corazón%20de%20rosas" target="_blank" class="btn-pedir">Pedir</a>
           </div>
         </div>
       </div>
 
       <div class="product-card fade-up" data-cat="caja">
-        <div class="product-img" style="background:#FFF0F5;">📦</div>
+        <div class="product-img" style="background:#FFF0F5;" id="img-p5">
+          <!-- REEMPLAZA EL EMOJI POR: <img src="TU_IMAGEN.jpg" alt="Caja luxury negra"> -->
+          📦
+        </div>
         <div class="product-body">
           <div class="product-cat">Arreglo en caja</div>
           <div class="product-name">Caja luxury negra</div>
           <div class="product-desc">Caja negra elegante con 15 rosas rojas y baby's breath. La opción más exclusiva de Florivé.</div>
           <div class="product-footer">
             <span class="product-price">S/ 180</span>
-            <a href="https://wa.me/51999999999?text=Hola,%20quiero%20pedir%20la%20Caja%20luxury%20negra" target="_blank" class="btn-pedir">Pedir</a>
+            <a href="https://wa.me/51919560600?text=Hola,%20quiero%20pedir%20la%20Caja%20luxury%20negra" target="_blank" class="btn-pedir">Pedir</a>
           </div>
         </div>
       </div>
 
       <div class="product-card fade-up" data-cat="caja">
-        <div class="product-img" style="background:#FFF0F5;">🌷</div>
+        <div class="product-img" style="background:#FFF0F5;" id="img-p6">
+          <!-- REEMPLAZA EL EMOJI POR: <img src="TU_IMAGEN.jpg" alt="Caja sorpresa romántica"> -->
+          🌷
+        </div>
         <div class="product-body">
           <div class="product-cat">Arreglo en caja</div>
           <div class="product-name">Caja sorpresa romántica</div>
           <div class="product-desc">Caja blanca con rosas rosadas y rojas. Incluye tarjeta personalizada gratis. Perfecta para aniversarios.</div>
           <div class="product-footer">
             <span class="product-price">S/ 130</span>
-            <a href="https://wa.me/51999999999?text=Hola,%20quiero%20pedir%20la%20Caja%20sorpresa%20romántica" target="_blank" class="btn-pedir">Pedir</a>
+            <a href="https://wa.me/51919560600?text=Hola,%20quiero%20pedir%20la%20Caja%20sorpresa%20romántica" target="_blank" class="btn-pedir">Pedir</a>
           </div>
         </div>
       </div>
@@ -780,14 +811,18 @@
         <div class="contacto-value">@florive.lima</div>
       </div>
     </div>
-    <a href="https://wa.me/51999999999?text=Hola,%20quiero%20hacer%20un%20pedido%20en%20Florivé" target="_blank" class="wssp-btn">
+    <a href="https://wa.me/51919560600?text=Hola,%20quiero%20hacer%20un%20pedido%20en%20Florivé" target="_blank" class="wssp-btn">
       <span>💬</span> Escribir por WhatsApp
     </a>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <div class="footer-logo">✦ Florivé</div>
+    <div class="footer-logo" style="display:flex;flex-direction:column;align-items:flex-start;line-height:1.2;">
+    <div style="font-size:0.5rem;letter-spacing:0.25em;color:#9A7B4F;font-family:'Jost',sans-serif;">✦ &nbsp; ✦ &nbsp; ✦</div>
+    <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:400;letter-spacing:0.18em;color:#F7E0E8;text-transform:uppercase;">Florivé</div>
+    <div style="width:100%;height:0.5px;background:#9A7B4F;margin-top:2px;"></div>
+  </div>
     <div class="footer-copy">© 2025 Florivé · Lima, Perú · Hecho con amor 🌹</div>
   </footer>
 
